@@ -1,0 +1,128 @@
+<?xml-stylesheet href="style.css"?>
+<SETLIST>  
+    <SONG>
+        <TITLE>Soon After Midnight</TITLE>
+        <ARTIST>Bob Dylan</ARTIST>
+        <ALBUM>Tempest</ALBUM>
+        <YEAR>2012</YEAR>
+        <GENRE>Folk</GENRE>
+        <GENRE>Rock</GENRE>
+        <GENRE>Blues</GENRE>
+        <GENRE>Country</GENRE>
+    </SONG>
+
+     <SONG>
+        <TITLE>12:51</TITLE>
+        <ARTIST>The Strokes</ARTIST>
+        <ALBUM>Room on Fire</ALBUM>
+        <YEAR>2003</YEAR>
+        <GENRE>Indie rock</GENRE>
+        <GENRE>Garage rock</GENRE>
+        <GENRE>New wave</GENRE>
+    </SONG>
+
+    <SONG>
+        <TITLE>In Transit</TITLE>
+        <ARTIST>Albert Hammond Jr.</ARTIST>
+        <ALBUM>Yours to Keep</ALBUM>
+        <YEAR>2006</YEAR>
+        <GENRE>Alternative rock</GENRE>
+        <GENRE>Indie rock</GENRE>
+    </SONG>
+
+     <SONG>
+        <TITLE>Bennie And The Jets</TITLE>
+        <ARTIST>Elton John</ARTIST>
+        <ALBUM>Goodbye Yellow Brick Road</ALBUM>
+        <YEAR>1973</YEAR>
+        <GENRE>Rock</GENRE>
+        <GENRE>Pop</GENRE>
+        <GENRE>Progressive rock</GENRE>
+    </SONG>
+
+
+    <SONG>
+        <TITLE>Streems</TITLE>
+        <ARTIST>The Symposium</ARTIST>
+        <ALBUM>The Symposium</ALBUM>
+        <YEAR>2017</YEAR>
+        <GENRE>Alternative</GENRE>
+        <GENRE>Indie</GENRE>
+    </SONG>
+
+
+    <SONG>
+        <TITLE>Let It Rock</TITLE>
+        <ARTIST>Jerry Garcia Band</ARTIST>
+        <ALBUM>Compliments</ALBUM>
+        <YEAR>1974</YEAR>
+        <GENRE>Rock</GENRE>
+        <GENRE>Folk music</GENRE>
+        <GENRE>Roots Rock</GENRE>
+    </SONG>
+
+
+    <SONG>
+        <TITLE>Congratulations</TITLE>
+        <ARTIST>MGMT</ARTIST>
+        <ALBUM>Congratulations</ALBUM>
+        <YEAR>2010</YEAR>
+        <GENRE>Psychedelic Rock</GENRE>
+        <GENRE>Indie Rock</GENRE>
+        <GENRE>Psychedelic Pop</GENRE>
+    </SONG>
+
+    <SONG>
+        <TITLE>A-Punk</TITLE>
+        <ARTIST>Vampire Weekend</ARTIST>
+        <ALBUM>Vampire Weekend</ALBUM>
+        <YEAR>2008</YEAR>
+        <GENRE>Indie Rock</GENRE>
+        <GENRE>Rock</GENRE>
+        <GENRE>Post-punk revival</GENRE>
+    </SONG>
+
+
+    <SONG>
+        <TITLE>Evil</TITLE>
+        <ARTIST>Interpool</ARTIST>
+        <ALBUM>Antics</ALBUM>
+        <YEAR>2004</YEAR>
+        <GENRE>Indie Rock</GENRE>
+        <GENRE>Alternative Rock</GENRE>
+        <GENRE>Post-punk revival</GENRE>
+    </SONG>
+
+
+
+    <SONG>
+        <TITLE>Blue Boy</TITLE>
+        <ARTIST>Mac Demarco</ARTIST>
+        <ALBUM>Salad Days</ALBUM>
+        <YEAR>2014</YEAR>
+        <GENRE>Lo-fi</GENRE>
+        <GENRE>Soft rock</GENRE>
+    </SONG>
+
+
+    <SONG>
+        <TITLE>Proud Mary</TITLE>
+        <ARTIST>Creedence Clearwater Revival</ARTIST>
+        <ALBUM>Bayou Country</ALBUM>
+        <YEAR>1969</YEAR>
+        <GENRE>Rock and roll</GENRE>
+        <GENRE>Country rock</GENRE>
+        <GENRE>Swamp rock</GENRE>
+    </SONG>
+
+
+     <SONG>
+        <TITLE>Wave of Mutilation</TITLE>
+        <ARTIST>Pixies</ARTIST>
+        <ALBUM>Doolittle</ALBUM>
+        <YEAR>1989</YEAR>
+        <GENRE>Alternative</GENRE>
+        <GENRE>Indie</GENRE>
+    </SONG>
+    
+</SETLIST>  

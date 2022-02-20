@@ -1,0 +1,28 @@
+SETLIST {
+    background-color: #000000;
+    width: 100%;
+}
+SONG {
+    display: block;
+    color: #00a700;
+    margin-bottom: 30px;
+}
+ARTIST {
+    display: block;
+    font-size: 120%;
+    color: #ffffff;
+}
+TITLE {
+    display: block;
+    color: #ffffff;
+    font-size: 200%;
+}
+ALBUM, YEAR {
+    display: block;
+    font-size: 120%;
+}
+GENRE {
+    display: block;
+    color: #95b492;
+    margin-left: 25pt;
+}
