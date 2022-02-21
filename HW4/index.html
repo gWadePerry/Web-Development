@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Joe's Hotdog Stand</title>
+
+    <style>
+        body {background-color: rgb(245, 170, 142);}
+        h1 {font-family:"Copperplate"}
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Joe's Hotdog Stand!</h1>
+    <h2>Your Order</h2>
+
+    <script language="javascript"> 
+
+    let numhotdogs = prompt("How many hotdogs do you want?", 0);
+    hotdogprice = numhotdogs * 3.75;
+    
+
+
+    let numfries = prompt("How many orders of fries do you want?", 0);
+    friesprice = numfries * 2;
+
+    let numsodas = prompt("How many sodas do you want?", 0);
+    sodasprice = numsodas * 1.80;
+    
+    document.write(numhotdogs + " hotdogs at $3.75 each is $" + hotdogprice.toFixed(2) + "<br>");
+    document.write(numfries + " fires at $2.00 each is $" + friesprice.toFixed(2) + "<br>");
+    document.write(numsodas + " sodas at $1.80 each is $" + sodasprice.toFixed(2) + "<br><br>");
+
+    totalprice = hotdogprice+ friesprice + sodasprice;
+
+    if(totalprice > 20){
+        document.write("You qualified for Joe’s special offer a 10% discount $" + totalprice);
+        totalprice = totalprice * .9;
+        document.write(" -> $" + totalprice.toFixed(2) + "<br>");
+    }
+    else{
+        document.write("You did not qualify for Joe’s special 10% discount<br>");
+    }
+    document.write("Your subtotal is $" + totalprice.toFixed(2)+"<br>");
+    tax = totalprice * .0625;
+    document.write("Massachusetts meals tax 6.25% : $" + tax.toFixed(2)+"<br>");
+    totalprice = totalprice + tax;
+    document.write("Total: $" + totalprice.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>
