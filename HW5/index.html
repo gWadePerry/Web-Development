@@ -48,11 +48,12 @@
 
     <script language="javascript"> 
 
-    var pick = [];
+       var pick = [];
 
-    for (var i = 1; i <= 5; i++) {
-        pick.push(Math.floor((Math.random() * 48) + 1));
-    }
+while(pick.length < 5){
+    var r = Math.floor(Math.random() * 48) + 1;
+    if(pick.indexOf(r) === -1) pick.push(r);
+}
     LuckyBall = Math.floor((Math.random() * 18) + 1)
 
     document.write("<div class='row'><div class='column'>");
