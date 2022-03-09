@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Amicable Numbers</title>
+        
+    </head>
+        
+    <body>
+        <h2>Amicable Numbers</h2>
+        
+        <form name="form">
+            Number One: <input type="number" id="number1">
+            <br/>
+            Number Two: <input type="number" id="number2">
+            <br/>
+            <input type="button" value="Check If Amicable" onclick="AmicableNumbers()">
+            <br/>
+        </form>
+        
+
+        <script language="javascript">
+        
+            function AmicableNumbers() {
+                let numOne = document.forms["form"]["number1"].value;
+                let numTwo = document.forms["form"]["number2"].value;
+
+                var factorsOne = findFactors(numOne);
+                var factorsTwo = findFactors(numTwo);
+                
+                var sumOne = sumFactors(factorsOne);
+                var sumTwo = sumFactors(factorsTwo);
+                if((sumOne == numTwo)&&(sumTwo == numOne)){
+                    document.write("<div>The numbers " +numOne+ " and "+ numTwo+" are Amicable Numbers!</div>");
+                }
+                else{
+                    document.write("<div>The numbers " +numOne+ " and "+ numTwo+" are not Amicable Numbers.</div>");
+                }
+                document.write("<div>"+ numOne+ " factors are :  "+ factorsOne+ "</div>");
+                document.write("<div>" + numTwo+ " factors are :  "+ factorsTwo+ "</div>");
+                return false;
+            }
+            
+            function findFactors(num) {
+                var factors = [];
+                for(let i = 0; i < num; i++) {
+                    if(num % i == 0) {
+                        factors.push(i);
+                    }
+                }
+                return factors;
+            }
+            
+            function sumFactors(factors) {
+                let sum = 0;
+                for(i = 0; i < factors.length; i++) {
+                    sum = sum + factors[i];
+                }
+                return sum;
+            }
+            
+            
+        </script>
+        
+    </body>
+
+</html>
