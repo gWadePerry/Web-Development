@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Billy Bonka Candy Shop</title>
+
+    <style>
+        body {background-color: rgb(247, 175, 175);}
+        h1 {font-family:"Luminari"}
+        h2 {font-family:"Luminari";font-size: 200%;}
+        h3 {font-family:"Luminari";}
+    </style>
+
+
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     
+      <script>            
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            $("#gfg").html(data.ip);
+        })
+    </script>
+
+</head>
+
+<body>
+    <center>
+        <h1>Shop</h1>
+        <h2>Your Order</h2>
+    </center>
+    
+
+    <script language="javascript"> 
+
+    DoneOrder = "n";
+
+    let numBonkaBar = 0;
+    let numBershyBiss = 0;
+    let numCandyCorn = 0;
+    let numWorms = 0;
+    let numHardCandy = 0;
+
+    do{
+        numBonkaBar = prompt("How many Bonka Bars do you want? (2.75$ per)", numBonkaBar);
+        numBershyBiss = prompt("How many Bershy Bisses do you want? (.25$ per)", numBershyBiss);
+        numCandyCorn = prompt("How many Candy Corn packets do you want? (2$ per)", numCandyCorn);
+        numWorms = prompt("How many Gunny Worm packets do you want? (3.75$ per)" , numWorms);
+        numHardCandy = prompt("How many Hard Candy packets do you want? (1.50$ per)", numHardCandy);
+
+
+        let order = "You have ordered ";
+        if((numBonkaBar == 0) && (numBershyBiss == 0) && (numBonkaBar == 0) &&
+        (numCandyCorn == 0) && (numHardCandy == 0) && (numWorms == 0)){
+            order = order + "nothing. Are you sure you dont want some delicious candy?"
+        }
+        if(numBonkaBar > 0){
+            order = order + ", " + numBonkaBar + " Bonka Bars ";
+        }
+        if(numBershyBiss > 0){
+            order = order + ", " + numBershyBiss + " Bershy Bisses ";
+        }
+        if(numCandyCorn > 0){
+            order = order + ", " + numCandyCorn + " Candy Corn packets ";
+        }
+        if(numWorms > 0){
+            order = order + ", " + numWorms + " Gunny Worm packets ";
+        }
+        if(numHardCandy > 0){
+            order = order + ", " + numHardCandy + " Hard Candy packets ";
+        }
+        order = order + "\r\n Enter 'y' to move on to checkout, Press anyother key to review and edit order.";
+
+        DoneOrder = prompt(order,"y");
+    }
+    while (DoneOrder != "y");
+
+    let priceBonkaBar = numBonkaBar * 2.75;
+    let priceBershyBiss = numBershyBiss * .25;
+    let priceCandyCorn = numCandyCorn * 2;
+    let priceWorms = numWorms * 3.75;
+    let priceHardCandy = numHardCandy * 1.50;
+ let totalprice = priceBonkaBar + priceBershyBiss +priceCandyCorn + priceWorms+  priceHardCandy; 
+ document.write("<center>");
+ document.write("<h3>");
+    if((numBonkaBar == 0) && (numBershyBiss == 0) && (numBonkaBar == 0) &&
+        (numCandyCorn == 0) && (numHardCandy == 0) && (numWorms == 0)){
+            
+        }
+        if(numBonkaBar > 0){
+            document.write("<img src='candys/bar.jpg' alt='Bonka Bar'><br>");
+            document.write(priceBonkaBar + "$ for " + numBonkaBar + " Bonka Bars.<br><br>" );
+        }
+        if(numBershyBiss > 0){
+            document.write("<img src='candys/kiss.jpg' alt='Bershy Biss'><br>");
+            document.write(priceBershyBiss + "$ for " + numBershyBiss + " Bershy Bisses.<br><br>" );
+        }
+        if(numCandyCorn > 0){
+            document.write("<img src='candys/candycorn.jpg' alt='Candy Corn'><br>");
+            document.write(priceCandyCorn + "$ for " + numCandyCorn + " Candy Corn Packets.<br><br>" );
+        }
+        if(numWorms > 0){
+            document.write("<img src='candys/worm.png' alt='Gummy Worms'><br>");
+            document.write(priceWorms + "$ for " + numWorms + " Gummy Worm Packets.<br><br>" );
+        }
+        if(numHardCandy > 0){
+            document.write("<img src='candys/HardCandy.jpg' alt='Hard Candy'><br>");
+            document.write(priceHardCandy + "$ for " + numHardCandy + " Hard Candy Pckets.<br><br>" );
+        }
+        document.write("</h3>");
+        document.write("<h2>"+totalprice + "$ has been charched to the account at IP: <span id='gfg'></span></h2>");
+        let ShippingDays = Math.floor((Math.random() * 10) + 1);
+        document.write("<h3>Your order will be shiped in "+ ShippingDays+" days.</h3>");
+        document.write("</center>");
+    </script>
+    <h2><center><a href="shop.html">ORDER AGAIN</a></center></h2>
+</body>
+</html>
+

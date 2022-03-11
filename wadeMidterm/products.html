@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Billy Bonka Candy Shop</title>
+
+    <style>
+        body {background-color: rgb(247, 175, 175);}
+        h1 {font-family:"Luminari"; font-variant: small-caps;font-size: 400%;
+            color:rgb(0, 60, 255);background-color: rgb(172, 242, 255);}
+        
+        h2 {font-family:"Luminari";font-size: 200%;}
+        h3 {font-family:"Luminari";}
+
+
+        a{
+    padding: 0px 0px 10px 25px;
+}
+
+a:visited {color: #000000}
+a:active {color:#000000} 
+a:hover {color:#00859c}
+
+.row {
+  display: flex;
+}
+.column {
+  flex: 30%;
+  padding: 10px;
+}
+
+.candyName{
+
+}
+
+.candy{
+    display: inline;
+    /* width: auto;
+    height: auto; */
+}
+
+.overlay{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    font-family: arial; color: #000000;
+    background-color: #8afbff;
+    border-top: 2px solid #000000;
+}
+
+.candy:hover .overlay{
+    opacity: 1;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1><center>Products</center></h1>
+
+    <h2><center><a href="shop.html">SHOP</a></center></h2>
+
+
+<span class = "row">
+    <span class = "column" style="background-color :bisque">
+        <h2><center>Chocolate</center></h2>
+        <center>
+            <span class="candy">
+                <img src="candys/bar.jpg" alt="Bonka Bar">
+                <span class="overlay">
+                    <br>Bonka Bar<br>2.75$ per bar<br>.
+                </span>
+            </span>
+                    <h3>Bonka Bar<br><br></h3>
+            <span class="candy">
+                <img src="candys/kiss.jpg" alt="Bershy Biss">
+                <span class="overlay">
+                    <br>Bershy Bisses<br>.25$ per Biss<br>.
+                </span>
+            </span>
+                    <h3>Bershy Bisses<br><br></h3>
+        </center>
+    </span>
+    <span class = "column" style="background-color :aquamarine">
+        <h2><center>Candy</center></h2>
+        <center>
+            <span class="candy">
+                <img src="candys/candycorn.jpg" alt="Candy Corn">
+                <span class="overlay">
+                    <br>Candy Corn<br>2$ per pack<br>.
+                </span>
+            </span>
+                     <h3>Candy Corn<br><br></h3>
+            <span class="candy">
+                <img src="candys/HardCandy.jpg" alt="Hard Candy">
+                <span class="overlay">
+                    <br>Hard Candy<br>1.50$ per pack<br>.
+                </span>
+            </span>
+                    <h3>Hard Candy<br><br></h3>
+            <span class="candy">
+                <img src="candys/worm.png" alt="Gummy Worms">
+                <span class="overlay">
+                    <br>Gummy Worms<br>3.75$ per pack<br>.
+                </span>
+            </span>
+                    <h3>Gummy Worms<br><br></h3>
+        </center>
+    </span>
+</span>
+
+    
+
+</body>
+</html>
