@@ -1,5 +1,4 @@
-{"songs":
-    [
+[
     {
         "artist": ["Bob Dylan"],
         "title": "Soon After Midnight",
@@ -67,4 +66,4 @@
         "year": 1989
     }
     ]
-    }
+   
