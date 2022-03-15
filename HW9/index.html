@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JSON Song List</title>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous">
+</script>
+
+</head>
+
+<body>
+	<script language="javascript">
+	var dataFilter;
+	$.get( "https://gwade28.github.io/Web-Development/HW9/songs.json", function(data){
+		str = JSON.stringify(data);
+		dataFilter = data;
+		
+		document.getElementById("Part2").innerHTML = str + "<br />";
+
+		track_number = 1;
+		strHTML = "<table>" + "<thead>" +
+				  "<th>Artist</th>" +
+				  "<th>Title</th>" +
+				  "<th>Genre</th>" +
+				  "<th>Year</th>" +
+				  "</thead>" +
+		   		  "<tbody>";
+				
+		data.forEach(function(song) {
+			strHTML += "<tr>" 
+			+ "<td>" + track_number + ".&nbsp;" + song.artist + "</td>"
+			+ "<td>" + song.title + "</td>"
+			+ "<td>" + song.genre + "</td>"
+			+ "<td>" + song.year + "</td>"
+			+ "</tr>";
+			track_number ++;
+		});
+		
+	strHTML += "</tbody>" + "</table>"
+	document.getElementById("Part3").innerHTML = strHTML;
+});
+
+
+function filter()
+{	
+	genre = document.getElementById("genre").value;
+	dataFilter.forEach(function(search){
+		for (i = 0; i < search.genre.length; i++) {
+			if (genre == search.genre[i]) {
+                alert(" "+search.title);
+				}
+			}
+	});
+}
+</script>
+
+<h1>Part 2</h1>
+<div id = "Part2">
+</div>
+
+	
+<h1>Part 3</h1>
+<div id = "Part3">
+
+</div>
+
+
+<h1>Part 4</h1>
+<article id="part_IV_container" style="margin: 30px">
+    <div id = "part_IV">
+    
+<form name="form1" id="form1" style="margin: 30px">
+Choose a genre:
+<select name="genre" id="genre" size="1">
+	<option value="genre" selected="selected">Genre</option>
+    <option value="Folk">Folk</option>
+    <option value="Indie">Indie</option>
+    <option value="Rock">Rock</option>
+    <option value="Alternative">Alternative</option>
+    <option value="Lo-fi">Lo-fi</option>
+    <option value="Pop">Pop</option>
+</select>
+   <input type="button" value="Filter" onclick='filter()'>
+ </form>
+</div>
+
+<div id = "Part4Filter">
+</div>
+
+</article>
+  </body>
+</html>
