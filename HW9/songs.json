@@ -2,19 +2,19 @@
     {
         "artist": ["Bob Dylan"],
         "title": "Soon After Midnight",
-        "genre(s)": ["Folk"],
+        "genre": ["Folk"],
         "year": 2012
     },
     {
         "artist": ["The Strokes"],
         "title": "12:51",
-        "genre(s)": ["Indie","Rock"],
+        "genre": ["Indie","Rock"],
         "year": 2003
     },
     {
         "artist": ["Albert Hammond Jr."],
         "title": "In Transit",
-        "genre(s)": ["Alternative","Indie"],
+        "genre": ["Alternative","Indie"],
         "year": 2006
     },
     {
@@ -26,44 +26,43 @@
     {
         "artist": ["The Symposium"],
         "title": "Streems",
-        "genre(s)": ["Alternative","Indie"],
+        "genre": ["Alternative","Indie"],
         "year": 2017
     },
     {
         "artist": ["Jerry Garcia Band"],
         "title": "Let It Rock",
-        "genre(s)": ["Rock","Folk"],
+        "genre": ["Rock","Folk"],
         "year": 1974
     },
     {
         "artist": ["MGMT"],
         "title": "Congratulations",
-        "genre(s)": ["Psychedelic Rock","Indie"],
+        "genre": ["Psychedelic Rock","Indie"],
         "year": 2010
     },
     {
         "artist": ["Vampire Weekend"],
         "title": "A-Punk",
-        "genre(s)": ["Rock","Indie"],
+        "genre": ["Rock","Indie"],
         "year": 2008
     },
     {
         "artist": ["Interpool"],
         "title": "Evil",
-        "genre(s)": ["Rock","Indie"],
+        "genre": ["Rock","Indie"],
         "year": 2004
     },
     {
         "artist": ["Blue Boy"],
         "title": "Mac Demarco",
-        "genre(s)": ["Lo-fi","Soft Rock"],
+        "genre": ["Lo-fi","Soft Rock"],
         "year": 2010
     },
     {
         "artist": ["Pixes"],
         "title": "Wave of Mulltilation",
-        "genre(s)": ["Alternative"],
+        "genre": ["Alternative"],
         "year": 1989
     }
-    ]
-   
+]   
