@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Wade Perry hw09 -->
 <meta charset="utf-8">
 <title>JSON Song List</title>
 <script   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -18,8 +19,8 @@
 		
 		document.getElementById("Part2").innerHTML = str + "<br />";
 
-		track_number = 1;
-		strHTML = "<table>" + "<thead>" +
+		songNum = 1;
+		Part2HTML = "<table>" + "<thead>" +
 				  "<th>Artist</th>" +
 				  "<th>Title</th>" +
 				  "<th>Genre</th>" +
@@ -28,17 +29,17 @@
 		   		  "<tbody>";
 				
 		data.forEach(function(song) {
-			strHTML += "<tr>" 
-			+ "<td>" + track_number + ".&nbsp;" + song.artist + "</td>"
+			Part2HTML += "<tr>" 
+			+ "<td>" + songNum + ".&nbsp;" + song.artist + "</td>"
 			+ "<td>" + song.title + "</td>"
 			+ "<td>" + song.genre + "</td>"
 			+ "<td>" + song.year + "</td>"
 			+ "</tr>";
-			track_number ++;
+			songNum ++;
 		});
 		
-	strHTML += "</tbody>" + "</table>"
-	document.getElementById("Part3").innerHTML = strHTML;
+        Part2HTML += "</tbody>" + "</table>"
+	document.getElementById("Part3").innerHTML = Part2HTML;
 });
 
 
@@ -67,8 +68,6 @@ function filter()
 
 
 <h1>Part 4</h1>
-<article id="part_IV_container" style="margin: 30px">
-    <div id = "part_IV">
     
 <form name="form1" id="form1" style="margin: 30px">
 Choose a genre:
@@ -83,11 +82,6 @@ Choose a genre:
 </select>
    <input type="button" value="Filter" onclick='filter()'>
  </form>
-</div>
 
-<div id = "Part4Filter">
-</div>
-
-</article>
   </body>
 </html>
