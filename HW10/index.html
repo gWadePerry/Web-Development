@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>API FUN</title>
+	<meta charset="utf-8"/>
+	<script>
+        commonWords = ["the","of","and","a","to","in","is","you","that","it","he","was","for","on","are","as","with","his","they","I","at","be","this","have","from","or","one","had","by","word","but","not","what","all","were","we","when","your","can","said","there","use","an","each","which","she","do","how","their","if","will","up","other","about","out","many","then","them","these","so","some","her","would","make","like","him","into","time","has","look","two","more","write","go","see","number","no","way","could","people","my","than","first","water","been","call","who","oil","its","now","find","long","down","day","did","get","come","made","may","part"];
+        api = "https://api.dictionaryapi.dev/api/v2/entries/en/"+  commonWords[Math.floor(Math.random() * commonWords.length)];
+		function getData() {
+			request = new XMLHttpRequest();
+			console.log("1 - request object created"); 
+		request.open("GET", api, true)
+
+ 
+			request.onreadystatechange = function() {
+				 
+				console.log("5 - response received");
+				result = request.responseText;	
+				mydata = JSON.parse(result);				
+				document.getElementById("data").innerHTML = mydata[0].word + "<br /> Phonetics: " + mydata[0].phonetic; 
+					
+			}
+
+
+			request.send();
+
+		}
+	</script>
+</head>
+
+
+<body onload="getData()">
+        <h1>API Fun</h1>
+		<p>describe the API you selected and what it does<br>
+            The API I chose is a free dictonary online. It offers lots of data on each word but for this assignment I just chose to focus on the phonetics<br> <br>
+        cite the website where you found it <br>
+        I found the API on the github page for public APIs <a href="https://github.com/public-apis/public-apis#dictionaries" target="_blank">FREEAPIs</a> <br><br>
+        describe the options you used for the API request<br>
+        I found a free to use API so no key was needed.
+        give two applications where this API would be helpful.<br>
+        This would be useful to anyone who could read honetics but didnt know how to pronouce a word. The list of random words could also be expanded or even made editable so one could enter a word and the phonetics would be returned. Then it would be useful for people who know english well just need to pronouce uncommon words.
+		<br><br></p>
+	<h1>Random Word Phonetics</h1>
+	<div id="data" style = "margin: 30px">Loading...</div>
+
+</body>
+</html>
